@@ -1,12 +1,12 @@
-#ifndef MAIN.H
-#define MAIN.H
+#ifndef MAIN_H
+#define MAIN_H
 
 #include <stdarg.h>
 
 typedef struct print
 {
 	char *f_type;
-	void (*print)(va_list list);
+	int (*f)(va_list list);
 } print_t;
 
 int p_char(va_list list);

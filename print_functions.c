@@ -19,16 +19,11 @@ int p_char(va_list list)
  */
 int p_str(va_list list)
 {
-	char *str = va_arg(list, int);
 	int i;
+	char *str;
+	str = va_arg(list, char *);
 	
 	for (i = 0; str[i] != '\0'; i++)
 		_putchar(str[i]);
 	return (i);
-}
-int p_prc(va_list list)
-{
-	char c = va_arg(list, int);
-		putchar(c);
-	return (1);
 }
