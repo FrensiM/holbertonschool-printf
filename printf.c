@@ -53,6 +53,8 @@ int _printf(const char *format, ...)
 
 		else
 		{
+			if (ptr == NULL)
+				return (0);
 			_putchar(*ptr);
 			counter++;
 		}
