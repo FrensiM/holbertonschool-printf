@@ -29,21 +29,21 @@ int _printf(const char *format, ...)
 				if (format[i + 1] == p_functions[j].f_type[0])
 				{
 					counter += p_functions[j].f(arg);
+					break;
 				}
+
+			}
+			if (p_functions[j].f_type == NULL)
+			{
+				counter += _putchar(format[i]);
+				counter += _putchar(format[i + 1]);
 			}
 			if (format[i + 1] == '%')
 				counter += _putchar('%');
-
-			else if (format[i + 1] == '\0')
-				return (-1);
-			else if (format[i + 1])
-				counter += _putchar(format[i + 1]);
 			i++;
 		}
 		else
-		{
 			counter += _putchar(format[i]);
-		}
 	}
 	va_end(arg);
 	return (counter);
