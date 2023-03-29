@@ -9,6 +9,7 @@
 int p_char(va_list list)
 {
 	char c = va_arg(list, int);
+
 	_putchar(c);
 	return (1);
 }
@@ -21,8 +22,10 @@ int p_str(va_list list)
 {
 	int i;
 	char *str;
+
 	str = va_arg(list, char *);
-	
+	if (str == NULL)
+		str = "(null)";
 	for (i = 0; str[i] != '\0'; i++)
 		_putchar(str[i]);
 	return (i);
