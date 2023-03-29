@@ -33,13 +33,13 @@ int _printf(const char *format, ...)
 				}
 
 			}
-			if (p_functions[j].f_type == NULL)
+			if (format[i + 1] == '%')
+				counter += _putchar('%');
+			else if (p_functions[j].f_type == NULL)
 			{
 				counter += _putchar(format[i]);
 				counter += _putchar(format[i + 1]);
 			}
-			if (format[i + 1] == '%')
-				counter += _putchar('%');
 			i++;
 		}
 		else
