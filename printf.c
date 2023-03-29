@@ -35,7 +35,9 @@ int _printf(const char *format, ...)
 			}
 			if (format[i + 1] == '%')
 				counter += _putchar('%');
-			else if (p_functions[j].f_type == NULL)
+			else if (format[i + 1] == '\0')
+				return(-1);
+			else if (p_functions[j].f_type == NULL && format[i + 1] != '%')
 			{
 				counter += _putchar(format[i]);
 				counter += _putchar(format[i + 1]);
