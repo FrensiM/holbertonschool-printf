@@ -31,12 +31,11 @@ int _printf(const char *format, ...)
 					counter += p_functions[j].f(arg);
 					break;
 				}
-
 			}
 			if (format[i + 1] == '%')
 				counter += _putchar('%');
 			else if (format[i + 1] == '\0')
-				return(-1);
+				return (-1);
 			else if (p_functions[j].f_type == NULL && format[i + 1] != '%')
 			{
 				counter += _putchar(format[i]);
