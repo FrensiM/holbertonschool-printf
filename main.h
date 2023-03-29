@@ -2,7 +2,11 @@
 #define MAIN_H
 
 #include <stdarg.h>
-
+/**
+ * struct print - struct name
+ * @f_type: type of format
+ * @f: funct
+ */
 typedef struct print
 {
 	char *f_type;
