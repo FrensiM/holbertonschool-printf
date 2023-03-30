@@ -16,6 +16,7 @@ typedef struct print
 int p_char(va_list list);
 int p_str(va_list list);
 int p_int(va_list list);
+int p_int_rec(long int n, int count);
 int p_float(va_list list);
 int _putchar(char c);
 int _printf(const char *format, ...);

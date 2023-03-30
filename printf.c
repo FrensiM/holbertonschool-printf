@@ -15,6 +15,8 @@ int _printf(const char *format, ...)
 	print_t p_functions[] = {
 		{"c", p_char},
 		{"s", p_str},
+		{"i", p_int},
+		{"d", p_int},
 		{NULL, NULL},
 	};
 	if (format == NULL)
