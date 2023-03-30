@@ -1,6 +1,6 @@
 # Project
 
-This is our Holberton School project from **Patrik Shalsi**, **Frensi Meta** and **Klajdi Dhana**.
+That is our Holberton School project from **Patrik Shalsi**, **Frensi Meta** and **Klajdi Dhana**.
 
 # Printf in the C Programming Language
 
