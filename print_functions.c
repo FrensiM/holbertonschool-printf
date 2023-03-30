@@ -31,7 +31,7 @@ int p_str(va_list list)
 	return (i);
 }
 /**
- * p_int - print int digits
+ * p_int_rec - print int digits
  * @n: number
  * @count: digits counter
  * Return: return the digits counter
@@ -47,20 +47,23 @@ int p_int_rec(long int n, int count)
 	}
 	if (n / 10)
 	{
-		nr_digits = p_int_rec(n / 10, count++);
+		nr_digits = p_int_rec(n / 10, count + 1);
 	}
 	_putchar(n % 10 + '0');
 	return (nr_digits);
 }
 /**
- *
+ * p_int - print int
+ * @list: list of elem
+ * Return: return the value
  *
  */
 int p_int(va_list list)
 {
 	long int n;
+
 	n = va_arg(list, int);
-	if ( n < 0)
+	if (n < 0)
 		return(p_int_rec(n, 2));
 	return(p_int_rec(n, 1));
 }
