@@ -1,8 +1,6 @@
 # Project
 
-That is our Holberton School project from **Patrik Shalsi**, **Frensi Meta** and **Klajdi Dhana**.
-
-# Printf in the C Programming Language
+## Printf in the C Programming Language
 
 This project is about us recreating the C library function ```printf```. This function sends formatted output to ```stdout``` (which is the standard output stream) by formatting the argument(s) passed in and converting the argument(s) into a character string.
 

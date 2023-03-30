@@ -12,9 +12,7 @@ int _printf(const char *format, ...)
 	va_list arg;
 	int i, j;
 
-	print_t p_functions[] = {
-		{"c", p_char},
-		{"s", p_str},
+	print_t p_functions[] = {{"c", p_char}, {"s", p_str},
 		{"i", p_int},
 		{"d", p_int},
 		{NULL, NULL},
@@ -47,7 +45,6 @@ int _printf(const char *format, ...)
 		}
 		else
 			counter += _putchar(format[i]);
-	}
-	va_end(arg);
+	} va_end(arg);
 	return (counter);
 }
