@@ -39,7 +39,7 @@ int p_str(va_list list)
 int p_int_rec(long int n, int count)
 {
 	int nr_digits = count;
-	
+
 	if (n < 0)
 	{
 		_putchar('-');
@@ -64,6 +64,6 @@ int p_int(va_list list)
 
 	n = va_arg(list, int);
 	if (n < 0)
-		return(p_int_rec(n, 2));
-	return(p_int_rec(n, 1));
+		return (p_int_rec(n, 2));
+	return (p_int_rec(n, 1));
 }
