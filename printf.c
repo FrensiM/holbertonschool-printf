@@ -49,5 +49,5 @@ int _printf(const char *format, ...)
 			counter += _putchar(format[i]);
 	}
 	va_end(arg);
-			return (counter);
+	return (counter);
 }
