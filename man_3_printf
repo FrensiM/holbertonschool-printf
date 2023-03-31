@@ -1,0 +1,44 @@
+.TH _printf
+.SH name
+_printf
+.SH SYNOPSIS
+#include <stdio.h>
+int _printf(const char *restrict format, ...);
+.SH DESCRIPTION
+The _printf function is used to output different data types passed as arguments.
+.br
+The data types you can use are: char, char *, int, long int.
+.br
+The _printf function prints any of the above arguments using the '%' placeholder.
+.br
+followed by a character.
+.SH Some examples
+.PP
+You can follow the examples below:
+.br
+%s - is used to print a string;
+.br
+%c - is used to print a character;
+.br
+%i || %d - is used to print an integer;
+.br
+.PP
+Printing a char:
+.br
+_printf("%c", 'A');
+.PP
+Printing a string;
+.br
+_printf("Let's try to printf a simple sentence.");
+.PP
+Printing integers:
+.br
+_printf("Negative:[%d]", -762534);
+.SH SEE ALSO
+_putchar
+.SH BUGS
+No known bugs.
+.SH AUTHOR
+Patrik Shalsi, Frensi Meta, Klajdi Dhana
+.SH COPYRIGHT
+Copyright © 2023 Holberton School Tirana
